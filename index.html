@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+            margin: 10px;
+        }
+
+        header,
+        main {
+            display: flex;
+        }
+
+        main {
+            flex-wrap: wrap;
+        }
+
+        .container {
+            flex: 1;
+            flex-direction: column;
+            height: 500px;
+            min-width: 300px;
+        }
+
+        .pink {
+            flex: 1;
+            height: 50px;
+            background-color: pink;
+        }
+
+        .teal {
+            flex: 2;
+            height: 50px;
+            background-color: teal;
+        }
+
+        .bigGray {
+            height: 200px;
+            background-color: gray;
+        }
+
+        .yellow {
+            height: 50px;
+            background-color: yellow;
+        }
+
+        .gray {
+            height: 30px;
+            background-color: gray;
+        }
+
+        @media (max-width: 1250px) {
+            .teal {
+                flex: 10;
+            }
+        }
+
+        @media (max-width: 650px) {
+            .pink {
+                display: none;
+            }
+        }
+    </style>
+    <title>Page Title</title>
+</head>
+
+<body>
+    <header>
+        <div class="pink"></div>
+        <div class="teal"></div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="bigGray"></div>
+            <div class="yellow"></div>
+            <div class="gray"></div>
+            <div class="gray"></div>
+            <div class="gray"></div>
+        </div>
+        <div class="container">
+            <div class="bigGray"></div>
+            <div class="yellow"></div>
+            <div class="gray"></div>
+            <div class="gray"></div>
+            <div class="gray"></div>
+        </div>
+        <div class="container">
+            <div class="bigGray"></div>
+            <div class="yellow"></div>
+            <div class="gray"></div>
+            <div class="gray"></div>
+            <div class="gray"></div>
+        </div>
+        <div class="container">
+            <div class="bigGray"></div>
+            <div class="yellow"></div>
+            <div class="gray"></div>
+            <div class="gray"></div>
+            <div class="gray"></div>
+        </div>
+    </main>
+</body>
+
+</html>
